@@ -1,0 +1,159 @@
+/* global style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: no-repeat center center fixed;
+  background-size: cover;
+  font-size: 1.6rem;
+  height: 100vh;
+  margin: 0;
+}
+
+
+/* navigation style */
+
+nav {
+  top: 0;
+  left: 0;
+  padding-top: 5.0rem;
+
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 200;
+  
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 1.0rem;
+  text-decoration: none;
+  color: #ffffff; 
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  font-style: bold;
+  font-weight: 700;
+  color: #e7e7e5
+}
+
+nav img {
+  padding-right: 1.0rem;
+  padding-left: 3.5rem;
+}
+
+#app {
+  display: flex;
+  height: 50%;
+}
+
+
+/* home style */
+
+.home_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #E1E1E6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+button{
+  background-color: transparent;
+  border: 0.2rem solid #E1E1E6;
+  border-radius: 0.5rem;
+  
+  
+  padding: 1.6rem 3.2rem;
+  
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  
+  cursor: pointer;
+}
+
+button:hover {
+  transition: all 0.3s ease;
+  background-color: #cccccc2d ;
+}
+
+/* universe style */
+
+.universe_content {
+  font-family: Roboto;
+  padding: 5rem;
+}
+
+.universe_content p {
+  color:#E1E1E6;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */  
+}
+
+/* exploration style */
+
+.exploration_content {
+  font-family: Roboto;
+  padding: 5rem;
+}
+
+.exploration_content p {
+  color:#E1E1E6;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
+@media (min-width: 1024px) {
+
+  nav {
+      font-size: 2.4rem;
+  }
+
+  nav a {
+    padding-left: 3.2rem;
+  }
+
+  nav img {
+    padding-right: 1.5rem;
+    padding-left: 7.2rem;
+  }
+
+  .text {
+    width: 65rem;
+  }
+
+  .universe_content, .exploration_content {
+    padding: 10rem;
+  }
+}
